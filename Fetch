@@ -1,0 +1,35 @@
+public class Fetch
+    {
+        
+    public static void FetchData()
+        {
+            Console.WriteLine("What's your employee ID?");
+            var writtenID = Console.ReadLine();
+
+            Console.WriteLine("What's your employee first name?");
+            var writtenName = Console.ReadLine();
+
+            Console.WriteLine("What's your employee last name?");
+            var writtenLastName = Console.ReadLine();
+
+            Console.WriteLine("What's your employee RFC?");
+            var writtenRFC = Console.ReadLine();
+
+            if(writtenRFC.Length != 13)
+            {
+                Console.WriteLine("RFC isn't written correctly!");
+                Console.WriteLine("Double check and re-write employee RFC");
+                writtenRFC = Console.ReadLine();
+            }
+
+            Console.WriteLine("When was the employee born?");
+            var writtenBornDate = Console.ReadLine();
+
+            Console.WriteLine("What's the empĺoyee status?");
+            var writtenStatus = Console.ReadLine();
+
+            //Append data to List
+
+            Console.WriteLine("Congrats! You registered a new employee!");
+        }
+}
